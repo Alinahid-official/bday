@@ -48,6 +48,25 @@ const MyLovee = () => {
                 </Stack>
 
             </Stack>
+            <Stack
+                mx={2}
+                color={'#f2a0d4'}
+                p={'2rem'}
+            // bg={'#f2a0d4'}
+            >
+
+                <Center>
+                    <VStack>
+                        <Text fontSize={'1.5rem'}>Our Moments</Text>
+                    </VStack>
+                </Center>
+                <Text>~ Your Love</Text>
+                <Stack>
+                    <video src="/nahid.mp4" width="320" height="240" controls />
+                </Stack>
+
+            </Stack>
+            <Text fontSize={'2.5rem'}>Thank You</Text>
         </Stack>
     )
 }
