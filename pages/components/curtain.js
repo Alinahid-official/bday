@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const Curtain = () => {
-    const [seconds, setSeconds] = useState(10);
+    const [seconds, setSeconds] = useState(15);
     const [showButton, setShowButton] = useState(false);
     const moveInLeft = keyframes`
     0% {
