@@ -8,7 +8,7 @@ const MyLovee = () => {
             <Text
                 color={'#fff'}
                 pos={'absolute'}
-                top={'20%'}
+                top={'5%'}
                 left={'50%'}
                 transform={'translate(-50%,0)'}
             >
