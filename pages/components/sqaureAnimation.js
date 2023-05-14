@@ -1,10 +1,12 @@
 import { Avatar, Button, Center, Stack, Text, VStack } from "@chakra-ui/react"
 import dynamic from 'next/dynamic'
+import { useRouter } from "next/router";
 import { useRef } from "react"
 // const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const SquareAnimation = () => {
 
+    const router = useRouter();
     const ref = useRef(null)
     return (
         <>
@@ -141,6 +143,7 @@ const SquareAnimation = () => {
                 mx={2}
                 color={'#f2a0d4'}
                 p={'2rem'}
+                pb={'5rem'}
             // bg={'#f2a0d4'}
             >
 
@@ -156,6 +159,13 @@ const SquareAnimation = () => {
                 </Stack>
 
             </Stack>
+            <Button onClick={() => router.push('/mylove')}
+                border={'1px solid #f2a0d4'}
+                color={'#fff'}
+                bg={'#f2a0d4'}
+            >
+                Click here for mine  
+             </Button>         
 
         </>
 
