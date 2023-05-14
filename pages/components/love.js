@@ -8,7 +8,7 @@ const SVG_XLINK = "http://www.w3.org/1999/xlink";
 
 let heartsRy = []
 
-function useTheHeart(n){
+function theHeart(n){
   let use = document.createElementNS(SVG_NS, 'use');
   use.n = n;
   use.setAttributeNS(SVG_XLINK, 'xlink:href', '#heart');
@@ -23,7 +23,7 @@ function useTheHeart(n){
   hearts.appendChild(use);
 }
 
-for(let n = 18; n >= 0; n--){useTheHeart(n)}
+for(let n = 18; n >= 0; n--){theHeart(n)}
 
 function Frame(){
   window.requestAnimationFrame(Frame);
